@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  get 'persons/profile'
-  get 'persons/aboutUs'
-  get 'persons/ourWork'
-  root 'persons#profile'
+  get 'easybreezys/home'
+  get 'easybreezys/aboutUs'
+  get 'easybreezys/ourWork'
+  root 'easybreezys#home'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

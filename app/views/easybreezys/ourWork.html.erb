@@ -1,4 +1,4 @@
-<div class="row">
+<!--<div class="row">
   <div class="col-lg-6">
     <a href="#" class="thumbnail">
       <p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p>
@@ -15,7 +15,19 @@
   <div class="col-md-6">
     <a href="cinqueterre.jpg" class="thumbnail">
       <p>The Cinque Terre: A rugged portion of coast in the Liguria region of Italy.</p>
-      <%= image_tag("blog_gal.png", alt: "ourWork") %>
+      <%=  image_tag("blog_gal.png", alt: "ourWork") %>
     </a>
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%=  image_tag("blog_gal.png", alt: "ourWork") %>
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+      </div>
+    </div>
   </div>
 </div>
