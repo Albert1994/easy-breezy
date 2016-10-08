@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails easy_breezy: test" uuid="ce3df5c0-f4bf-423f-8895-6d751d3d2714">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>al</user-name>
+      <user-password>dbeedf9bdf98df99df9e</user-password>
+    </data-source>
+    <data-source name="d" uuid="7907ab11-f3d1-49b7-8ea2-ddb8dfe90056">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>al</user-name>
+      <user-password>dbeedf9bdf98df99df9e</user-password>
+    </data-source>
+  </component>
+</project>
