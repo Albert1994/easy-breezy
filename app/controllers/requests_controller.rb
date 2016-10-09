@@ -2,7 +2,7 @@ class RequestsController < ApplicationController
 
   before_action :set_request, only: [:show, :edit, :update, :destroy]
   before_action :set_user, only: [:index, :create, :new]
-  before_filter :authenticate_user!, only: :create
+  before_filter :authenticate_user!
 
   def index
     @requests = @user.requests
