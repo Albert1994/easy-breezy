@@ -1,0 +1,83 @@
+
+
+
+   <!-- t.string :email
+    t.string :type
+    t.text :body
+    t.integer :time
+    t.string :price
+    t.string :phone
+    t.string :status
+    t.integer :user_id -->
+
+
+<div class="row main">
+  <div class="panel-heading">
+    <div class="panel-title text-center">
+      <h2 class="title">Вход</h2>
+      <hr />
+    </div>
+  </div>
+  <div class="main-login main-center">
+    <%= form_for ([@request.user, @request]) do |f| %>
+
+        <div class="form-group">
+          <%= f.label :Тип_заказа, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <%= f.select :type_request, options_for_select(["landing page","Сайт визитка","Интернет Магазин","Программы на с++, с#, java, python, ruby, ror, php","Дипломные работы","Курсовые работы","Переводы на или с английского","Решение задач по математике"]), class: "form-control" %>
+           </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :Описание_заказа, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <%= f.text_area :body, class: "form-control" %>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :Время, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <%= f.date_field(:time_request,class: "form-control") %>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :Цена, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <%= f.text_field :price, class: "form-control" %>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <%= f.label :Телефон, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <%= f.telephone_field(:phone_user, class: "form-control") %>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group ">
+          <%= f.submit "Сделать заказ", class: "btn btn-primary btn-lg btn-block login-button" %>
+        </div>
+
+    <% end %>
+  </div>
+</div>
+
+
