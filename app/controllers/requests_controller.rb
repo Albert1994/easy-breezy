@@ -25,6 +25,10 @@ class RequestsController < ApplicationController
     @request.status = "0"
     @request.email = current_user.email
 
+
+    UserMailer.signup_conf(@request).deliver
+
+
     respond_to do |format|
       if @request.save
         format.html { redirect_to @request, notice: 'Post was successfully created.' }
