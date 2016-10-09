@@ -8,44 +8,42 @@
   <div class="main-login main-center">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-      <div class="form-group">
-        <%= f.label :Ваш_Email, class: "cols-sm-2 control-label" %><br />
-        <div class="cols-sm-10">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-            <%= f.email_field :email, autofocus: true, class: "form-control" %>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <%= f.label :Пароль, class: "cols-sm-2 control-label" %><br />
-        <div class="cols-sm-10">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-            <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter your Password" %>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <% if devise_mapping.rememberable? -%>
-            <div class="field">
-              <%= f.check_box :remember_me %>
-              <%= f.label :Запомнить_меня %>
+        <div class="form-group">
+          <%= f.label :Ваш_Email, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+              <%= f.email_field :email, autofocus: true, class: "form-control" %>
             </div>
-        <% end -%>
-      </div>
-      <div class="form-group ">
-        <%= f.submit "Вход", class: "btn btn-primary btn-lg btn-block login-button" %>
-      </div>
-      <div class="login-register">
-        <%= render "devise/shared/links" %>
-      </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <%= f.label :Пароль, class: "cols-sm-2 control-label" %><br />
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter your Password" %>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <% if devise_mapping.rememberable? -%>
+              <div class="field">
+                <%= f.check_box :remember_me %>
+                <%= f.label :Запомнить_меня %>
+              </div>
+          <% end -%>
+        </div>
+        <div class="form-group ">
+          <%= f.submit "Вход", class: "btn btn-primary btn-lg btn-block login-button" %>
+        </div>
+        <div class="login-register">
+          <%= render "devise/shared/links" %>
+        </div>
 
     <% end %>
   </div>
 </div>
-
-
