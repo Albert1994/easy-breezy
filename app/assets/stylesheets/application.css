@@ -16,20 +16,8 @@
 @import "stylename.css";
 
 
-body{
-}
-
-
-.da{
-    font-family: "OpenSansBold";
-}
-
-.ad{
-    font-family: "OpenSansBoldItalic";
-}
-
-.qwe{
-    font-family: "OpenSansLight";
+.body_container{
+    margin-top: 80px;
 
 }
 
@@ -157,140 +145,65 @@ input::-webkit-input-placeholder {
 /* ----------------------------------------
 */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-
-* {
-    font-family: 'Roboto', sans-serif;
+.list-group-item{
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #547a5a;
+}
+.list-group-item:hover {
+    background-color: #547a5a;
+    color: #ffffff;
+}
+.footer{
+    margin-top: 10px;
+    border-top: 1px solid #76a77f;
+    padding-top: 14px;
+    font-size: 16px;
+    background-color: #9CBDA2;
+    color: #ffffff;
+}
+body{
+    background-color: #ffffff;
+}
+.container>.jumbotron{
+    background-color: #547a5a;
+    color: #fff;
+}
+.navbar, .dropdown-menu{
+    padding-bottom: 3px;
+    border-bottom: 2px solid #547a5a;
+    background-color: #9CBDA2;
+    color: #ffffff;
+}
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+    border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    border-bottom: 3px solid transparent;
+    background: none;
+}
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+    color: #ffffff;
+    font-size: 15px;
+}
+.dropdown-menu{
+    -webkit-box-shadow: none;
+    box-shadow:none;
 }
 
-#login-modal .modal-dialog {
-    width: 350px;
+.nav li:hover:nth-child(1n+1){
+    margin-bottom: -3px;
+    border-bottom: #ffffff 3px solid;
+    background-color: #547a5a;
 }
 
-#login-modal input[type=text], input[type=password] {
-	margin-top: 10px;
+.dropdown-menu li:hover:nth-child(1n+1){
+    margin-bottom: -3px;
+    border: #ffffff 3px solid;
+    background-color: #547a5a;
 }
 
-#div-login-msg,
-#div-lost-msg,
-#div-register-msg {
-    border: 1px solid #dadfe1;
-    height: 30px;
-    line-height: 28px;
-    transition: all ease-in-out 500ms;
-}
-
-#div-login-msg.success,
-#div-lost-msg.success,
-#div-register-msg.success {
-    border: 1px solid #68c3a3;
-    background-color: #c8f7c5;
-}
-
-#div-login-msg.error,
-#div-lost-msg.error,
-#div-register-msg.error {
-    border: 1px solid #eb575b;
-    background-color: #ffcad1;
-}
-
-#icon-login-msg,
-#icon-lost-msg,
-#icon-register-msg {
-    width: 30px;
-    float: left;
-    line-height: 28px;
-    text-align: center;
-    background-color: #dadfe1;
-    margin-right: 5px;
-    transition: all ease-in-out 500ms;
-}
-
-#icon-login-msg.success,
-#icon-lost-msg.success,
-#icon-register-msg.success {
-    background-color: #68c3a3 !important;
-}
-
-#icon-login-msg.error,
-#icon-lost-msg.error,
-#icon-register-msg.error {
-    background-color: #eb575b !important;
-}
-
-#img_logo {
-    max-height: 100px;
-    max-width: 100px;
-}
-
-/* #########################################
-   #    override the bootstrap configs     #
-   ######################################### */
-
-.modal-backdrop.in {
-    filter: alpha(opacity=50);
-    opacity: .8;
-}
-
-.modal-content {
-    background-color: #ececec;
-    border: 1px solid #bdc3c7;
-    border-radius: 0px;
-    outline: 0;
-}
-
-.modal-header {
-    min-height: 16.43px;
-    padding: 15px 15px 15px 15px;
-    border-bottom: 0px;
-}
-
-.modal-body {
-    position: relative;
-    padding: 5px 15px 5px 15px;
-}
-
-.modal-footer {
-    padding: 15px 15px 15px 15px;
-    text-align: left;
-    border-top: 0px;
-}
-
-.checkbox {
-    margin-bottom: 0px;
-}
-
-.btn {
-    border-radius: 0px;
-}
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-    outline: none;
-}
-
-.btn-lg, .btn-group-lg>.btn {
-    border-radius: 0px;
-}
-
-.btn-link {
-    padding: 5px 10px 0px 0px;
-    color: #95a5a6;
-}
-
-.btn-link:hover, .btn-link:focus {
-    color: #2c3e50;
-    text-decoration: none;
-}
-
-.glyphicon {
-    top: 0px;
-}
-
-.form-control {
-    border-radius: 0px;
+.navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
 }
