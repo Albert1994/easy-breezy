@@ -17,10 +17,24 @@
 @import "bootstrap";
 
 
+
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+    font-size: 16px;
+}
+.colorasd{
+    background-color: #2f652a; 
+    color: #ffffff; 
+}
 .main{
     margin: -30px;
     margin: 10px;
 }
+
+body {
+    font-family: 'OpenSansBold';
+    color: #2f652a;
+    }
 
 h2.title {
     font-size: 50px;
@@ -136,4 +150,82 @@ input::-webkit-input-placeholder {
 
 .no-padding {
     padding: 0;
+}
+
+.body_container{
+    margin-top: 80px;
+
+}
+
+
+.list-group-item{
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #547a5a;
+}
+.list-group-item:hover {
+    background-color: #547a5a;
+    color: #ffffff;
+}
+.footer{
+    margin-top: 10px;
+    border-top: 1px solid #76a77f;
+    padding-top: 14px;
+    font-size: 16px;
+    background-color: #9CBDA2;
+    color: #ffffff;
+}
+body{
+    background-color: #ffffff;
+}
+.container>.jumbotron{
+    background-color: #547a5a;
+    color: #fff;
+}
+.navbar, .dropdown-menu{
+    padding-bottom: 3px;
+    border-bottom: 2px solid #547a5a;
+    background-color: #9CBDA2;
+    color: #ffffff;
+}
+
+
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+    border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    border-bottom: 3px solid transparent;
+    background: none;
+    color: #fff;
+}
+ .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+    color: #fff;
+    font-size: 20px;
+}
+.navbar a, .dropdown-menu>li>a{
+    color: #000;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.dropdown-menu{
+    -webkit-box-shadow: none;
+    box-shadow:none;
+}
+
+.nav li:hover:nth-child(1n+1){
+    margin-bottom: -3px;
+    border-bottom: #ffffff 3px solid;
+    background-color: #547a5a;
+}
+
+.dropdown-menu li:hover:nth-child(1n+1){
+    margin-bottom: -3px;
+    border: #ffffff 3px solid;
+    background-color: #547a5a;
+    
+}
+
+.navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
 }
