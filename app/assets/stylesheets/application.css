@@ -158,7 +158,6 @@ input::-webkit-input-placeholder {
     padding: 0;
 }
 
-<<<<<<< HEAD
 .body_container{
     margin-top: 80px;
 
@@ -178,20 +177,37 @@ input::-webkit-input-placeholder {
     background-color: #547a5a;
     color: #ffffff;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+ margin-bottom: 60px;
+}
+
+
 .footer{
     margin-top: 10px;
     border-top: 1px solid #76a77f;
     padding-top: 14px;
     font-size: 16px;
     background-color: #9CBDA2;
-    color: #ffffff;
+    color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+     width: 100%;
+  height: 50px;
 }
 body{
     background-color: #ffffff;
 }
 .container>.jumbotron{
-    background-color: #547a5a;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    border-top: 2px solid  #000;
+    border-bottom: 2px solid  #000;
 }
 .navbar, .dropdown-menu{
     padding-bottom: 3px;
@@ -209,7 +225,6 @@ body{
 .nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
     border-bottom: 3px solid transparent;
     background: none;
-
     color: #fff;
 }
  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
@@ -223,8 +238,8 @@ body{
 
 }
 .navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
-    color: #ffffff;
-    font-size: 15px;
+    color: #000;
+    font-size: 20px;
 }
 .dropdown-menu{
     -webkit-box-shadow: none;
