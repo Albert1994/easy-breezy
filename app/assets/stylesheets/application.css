@@ -16,6 +16,17 @@
 @import "stylename.css";
 
 
+
+
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+    font-size: 16px;
+}
+.colorasd{
+    background-color: #2f652a; 
+    color: #ffffff; 
+}
+
 .body_container{
     margin-top: 80px;
 
@@ -25,6 +36,11 @@
     margin: -30px;
     margin: 10px;
 }
+
+body {
+    font-family: 'OpenSansBold';
+    color: #2f652a;
+    }
 
 h2.title {
     font-size: 50px;
@@ -142,8 +158,15 @@ input::-webkit-input-placeholder {
     padding: 0;
 }
 
+.body_container{
+    margin-top: 80px;
+
+}
+
+
 /* ----------------------------------------
 */
+
 
 .list-group-item{
     background-color: #ffffff;
@@ -154,20 +177,37 @@ input::-webkit-input-placeholder {
     background-color: #547a5a;
     color: #ffffff;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+ margin-bottom: 60px;
+}
+
+
 .footer{
     margin-top: 10px;
     border-top: 1px solid #76a77f;
     padding-top: 14px;
     font-size: 16px;
     background-color: #9CBDA2;
-    color: #ffffff;
+    color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+     width: 100%;
+  height: 50px;
 }
 body{
     background-color: #ffffff;
 }
 .container>.jumbotron{
-    background-color: #547a5a;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    border-top: 2px solid  #000;
+    border-bottom: 2px solid  #000;
 }
 .navbar, .dropdown-menu{
     padding-bottom: 3px;
@@ -175,16 +215,31 @@ body{
     background-color: #9CBDA2;
     color: #ffffff;
 }
+
+
+
+
 .nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
     border-bottom: 3px solid transparent;
 }
 .nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
     border-bottom: 3px solid transparent;
     background: none;
+    color: #fff;
+}
+ .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+    color: #fff;
+    font-size: 20px;
+}
+.navbar a, .dropdown-menu>li>a{
+    color: #000;
+    font-size: 20px;
+    margin-right: 5px;
+
 }
 .navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
-    color: #ffffff;
-    font-size: 15px;
+    color: #000;
+    font-size: 20px;
 }
 .dropdown-menu{
     -webkit-box-shadow: none;
@@ -201,6 +256,7 @@ body{
     margin-bottom: -3px;
     border: #ffffff 3px solid;
     background-color: #547a5a;
+
 }
 
 .navbar-toggle .icon-bar{
