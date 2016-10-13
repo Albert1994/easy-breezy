@@ -105,6 +105,13 @@ input::-webkit-input-placeholder {
 .lib-panel img {
     width: 100%;
     background-color: transparent;
+    display: block;
+}
+.lib-panel img:hover {
+    opacity: 0.5;
+}
+.img-site:hover{
+    background: url('search-icon-16214.jpg');
 }
 
 .lib-panel .row,
