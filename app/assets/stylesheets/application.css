@@ -166,17 +166,26 @@ input::-webkit-input-placeholder {
 
 /* ----------------------------------------
 */
-
-
-.list-group-item{
-    background-color: #ffffff;
+.list-group>li>a{
+    display: block;
     color: #000;
+    text-decoration: none;
+}
+.list-group>li>a:hover{
+    color: #fff;
+
+}
+.list-group>li{
+    background-color: #ffffff;
+    display: block;
     border: 2px solid #547a5a;
 }
-.list-group-item:hover {
+
+.list-group>li:hover{
+    display: block;
     background-color: #547a5a;
-    color: #ffffff;
 }
+
 
 html {
   position: relative;

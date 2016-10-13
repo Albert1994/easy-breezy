@@ -9,18 +9,18 @@
     <div class="row">
       <div class="col-xs-6">
        <h3> <ul class="list-group">
-        <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> landing page</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Сайт визитка</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Интернет Магазин</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Программы на с++, с#, java, python, ruby, ror, php</li>
+         <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Landing page', typework_landing_page_path %></li>
+         <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Сайт визитка', typework_site_card_path %></li>
+         <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Интернет магазин', typework_shop_path %></li>
+         <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Программы на с++, с#, java, python, ruby, ror, php', typework_programms_path %></li>
       </ul></h3>
       </div>
       <div class="col-xs-6">
       <h3>  <ul class="list-group">
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Дипломные работы</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Курсовые работы</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Переводы на или с английского</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Решение задач по математике (мат анализ, дифуры, линейная алгебра, тер вер, мат стат.)</li>
+          <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Дипломные работы', typework_diploma_path %></li>
+          <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Курсовая работы', typework_exchange_rate_path %></li>
+          <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Переводы на или с английского', typework_text_translation_path %></li>
+          <li class="list-group-item"><%= link_to content_tag(:span," ", class: "glyphicon glyphicon-ok") + ' Решение задач по математике (мат анализ, дифуры, линейная алгебра, тер вер, мат стат.)', typework_problem_solving_path %></li>
       </ul></h3>
       </div>
     </div>

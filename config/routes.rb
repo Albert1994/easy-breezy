@@ -7,6 +7,14 @@ Rails.application.routes.draw do
   get 'easybreezys/ourWork'
   root 'easybreezys#home'
 
+  get 'typework/landing_page'
+  get 'typework/diploma'
+  get 'typework/exchange_rate'
+  get 'typework/problem_solving'
+  get 'typework/programms'
+  get 'typework/shop'
+  get 'typework/site_card'
+  get 'typework/text_translation'
 
 
   resources :users, shallow: true do
