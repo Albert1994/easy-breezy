@@ -5,7 +5,7 @@ defaults_development: &defaults_development
   encoding: unicode
   username: al
   password: a1234
-  host: localhost
+  host: localhost123
 
 development:
   database: easy1
