@@ -36,8 +36,8 @@ Rails.application.configure do
       :domain => "gmail.com",
       :authentication => "plain",
       :enable_starttls_auto => true,
-      :user_name => "alfaalbert1994@gmail.com",
-      :password => "135246aaa",
+      :user_name => "companyeasybreezy@gmail.com",
+      :password => "breezyeasy123",
   }
 
 
